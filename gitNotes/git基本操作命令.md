@@ -27,5 +27,5 @@
 	```shell
 		git diff
 	```
-7. 
+7.  
 
