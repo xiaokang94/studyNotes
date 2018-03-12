@@ -27,6 +27,48 @@
 	```shell
 		git diff
 	```
-7.
+7. 查看已暂存区域和本地仓库最新版本之间的更改
+
+	```shell
+		git diff --cached
+	```
+8. 移除文件
+	```shell
+	git rm test.md
+	```
+9. 文件改名
+	```shell
+		git mv test.md test2.md
+	```
+10. 查看日志
+
+	- 查看所有的日志记录
+
+		```shell
+		git log
+		```
+	- 查看最近三次提交的内容差异
+		```shell
+			git log -p -3	
+		```
+	- 每次提交的简略统计信息
+		```shell
+			git log --stat
+		```
+11. 撤销操作	
+	
+	- 重新提交
+		```shell
+			git commit --amend
+		```
+	- 取消暂存的文件
+		```shell
+			git reset HEAD test.md
+		```
+	- 撤销对文件的修改
+		```shell
+			git checkout -- test.md
+		```
+
   
 
