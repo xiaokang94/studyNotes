@@ -1,5 +1,5 @@
 # no vim .swap files
-.swap
+*.swap
 # no .a .o
 .[oa]
 ~
