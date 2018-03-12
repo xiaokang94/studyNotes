@@ -1,5 +1,4 @@
 # git 基本操作命令 #
-## 初始化git仓库 ##
 1. 初始化一个空的仓库
 
 	``` shell
@@ -17,13 +16,16 @@
 		git add *
 	``` 
 4. 将暂存区域的文件 添加到本地仓库
+
 	```shell
 		git commit -m '日志记录'	
 	```
 5. 上传时忽略文件
+
 	- git控制根目录下创建.gitignore文件
 
 6. 查看已暂存和未暂存区域的修改(当前文件夹和暂存区域之间的差异)
+
 	```shell
 		git diff
 	```
@@ -33,10 +35,12 @@
 		git diff --cached
 	```
 8. 移除文件
+
 	```shell
 	git rm test.md
 	```
 9. 文件改名
+
 	```shell
 		git mv test.md test2.md
 	```
@@ -48,27 +52,61 @@
 		git log
 		```
 	- 查看最近三次提交的内容差异
+
 		```shell
 			git log -p -3	
 		```
 	- 每次提交的简略统计信息
+
 		```shell
 			git log --stat
 		```
 11. 撤销操作	
 	
 	- 重新提交
+
 		```shell
 			git commit --amend
 		```
 	- 取消暂存的文件
+
 		```shell
 			git reset HEAD test.md
 		```
 	- 撤销对文件的修改
+
 		```shell
 			git checkout -- test.md
 		```
+12. 远程仓库的使用
 
+	- 显示远程仓库
+
+		```shell
+			git remote -v
+		```
+	- 从远程仓库中抓取与拉取数据 不会自动合并或修改你当前的工作
+
+		```shell
+			git fetch [remote-name]
+		```
+	- 抓取数据并自动合并到当前所在的分支
+
+		```shell
+			git pull
+		```
+	- 查看远程仓库
+		
+		```shell
+			git remote show origin	
+		```
+	- 远程仓库的重命名与移除
+		 
+		```shell
+			git remote rename a b
+			git remote rm a
+		```
+	
+	
   
 
