@@ -106,6 +106,15 @@
 			git remote rename a b
 			git remote rm a
 		```
+
+	- 远程仓库的绑定
+		
+		```shell
+			git remote add studyNotes https://github.com/xiaokang94/studyNotes.git
+		```
+
+
+
 	
 	
   
