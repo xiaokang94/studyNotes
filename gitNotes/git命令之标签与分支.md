@@ -41,6 +41,6 @@
 	7. 检出标签 
 		
 		```shell
-			git checkout -b v1.0	
+			git checkout -b [branchname] [tagname]	
 		```
 
