@@ -1,5 +1,6 @@
 # no vim .swap files
 *.swp
+*.swo
 # no .a .o
 .[oa]
 ~
